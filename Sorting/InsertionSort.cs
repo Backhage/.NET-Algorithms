@@ -2,7 +2,7 @@
 
 namespace Sorting
 {
-    public class InsertionSort
+    public class Insertionsort
     {
         public static void Sort<T>(T[] data) where T : IComparable, IEquatable<IComparable>
         {

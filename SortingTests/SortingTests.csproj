@@ -48,7 +48,10 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="InsertionSortTests.cs" />
+    <Compile Include="Comparable.cs" />
+    <Compile Include="GenericTests.cs" />
+    <Compile Include="HeapsortTests.cs" />
+    <Compile Include="InsertionsortTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

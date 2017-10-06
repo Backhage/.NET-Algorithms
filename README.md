@@ -6,9 +6,18 @@ The algorithms are grouped into different categories depending on their usage.
 
 ### Sorting
 Contains various algorithms for sorting data.
-#### Insertion sort
+
+#### Insertionsort
 Suitable for sorting small arrays where elements are highly likely to be close to sorted to begin with.
 * Stable
 * In place
-* Worst case time consumption *O(N^2)*
-* Worst case space consumption *O(1)*
+* Worst case time complexity *O(N^2)*
+* Worst case space complexity *O(1)*
+
+#### Heapsort
+Suitable for sorting large arrays where worst case time complexity must not exceed *O(NlogN)* and internal order between equal elements are not important.
+In practice somewhat slower than Quicksort.
+* Not stable
+* In place
+* Worst case time complexity *O(NlogN)*
+* Worst case space complexity *O(1)*
