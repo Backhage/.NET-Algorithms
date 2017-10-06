@@ -27,7 +27,7 @@ namespace SortingTests
 
         internal static void Sort_GivenArrayWithUnsortedElements_ShouldSortElementsWithinTheArray(Action<Comparable[]> sortingMethod)
         {
-            Comparable[] data = new Comparable[100];
+            Comparable[] data = new Comparable[10000];
             Random rng = new Random();
             for (int i = 0; i < data.Length; i++)
             {
