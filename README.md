@@ -1,5 +1,5 @@
 # .NET Algorithms Library
-Contains various computer algorithms written for personal learning and development purpuse. There is no guarantee that they are accurate and effective. Use them at your own risk.
+Contains various computer algorithms written for personal learning and development purpose. There is no guarantee that they are accurate and effective. Use them at your own risk.
 
 ## Categories
 The algorithms are grouped into different categories depending on their usage.
