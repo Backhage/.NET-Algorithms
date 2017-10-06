@@ -21,3 +21,11 @@ In practice somewhat slower than Quicksort.
 * In place
 * Worst case time complexity *O(NlogN)*
 * Worst case space complexity *O(1)*
+
+#### Mergesort
+Suitable for sorting large arrays where it is important to keep the internal ordering between elements with equal value.
+Requires an additional array to be created to hold the data during sort. Hence, requires more memory than heapsort.
+* Stable
+* Not in place
+* Worst case time complexity *O(NlogN)*
+* Worst case space complexity *O(N)*
