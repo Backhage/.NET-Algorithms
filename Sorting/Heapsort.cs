@@ -4,6 +4,17 @@ namespace Sorting
 {
     public class Heapsort
     {
+        /* The heap sort algorithm orders the elements in the array as a max-heap.
+           From the heap it then takes the largest element and places it at the last position.
+           The element that was previously last is put in the first position and then sifted down
+           in the heap, restoring the heap order.
+
+           Now the new largest element(not including the one already put last) is swapped with
+           the second last element, inserting the second largest element just before the largest element
+           in the array.
+           
+           The procedure is then repeated until the complete array has been sorted.
+         */
         public static void Sort<T>(T[] data) where T : IComparable
         {
             if (data.Length <= 1)
@@ -11,14 +22,6 @@ namespace Sorting
                 return;
             }
 
-            // The heap sort algorithm orders the elements in the array as a max-heap.
-            // From the heap it then takes the largest element and places it at the last position.
-            // The element that was previously last is put in the first position and then sifted down
-            // in the heap, restoring the heap order.
-            // Now the new largest element (not including the one already put last) is swapped with
-            // the second last element, inserting the second largest element just before the largest element
-            // in the array.
-            // The procedure is then repeated until the complete array has been sorted.
             Heapify(data);
             int end = data.Length - 1;
             while (end > 0)
@@ -29,16 +32,17 @@ namespace Sorting
             }
         }
 
+        /* A binary heap is a data structure that takes the form of a binary tree.
+           In a max - heap the key stored in each node is larger, or equal to, the
+           key stored in it's two children.
+
+           The heap is created by assuming that the current data is a max - heap that is
+           "broken", i.e.there might be nodes with a key smaller than any of it's children.
+           The order in restored by sifting down the nodes, starting at the last leaf's parent
+           and then moving up the tree towards the root.
+        */
         private static void Heapify<T>(T[] data) where T : IComparable
         {
-            // A binary heap is a data structure that takes the form of a binary tree. 
-            // In a max-heap the key stored in each node is larger, or equal to, the
-            // key stored in it's two children.
-            //
-            // The heap is created by assuming that the current data is a max-heap that is
-            // "broken", i.e. there might be nodes with a key smaller than any of it's children.
-            // The order in restored by sifting down the nodes, starting at the last leaf's parent
-            // and then moving up the tree towards the root.
             int start = ParentIndex(data.Length - 1);
             while (start >= 0)
             {

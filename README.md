@@ -29,3 +29,10 @@ Requires an additional array to be created to hold the data during sort. Hence, 
 * Not in place
 * Worst case time complexity *O(NlogN)*
 * Worst case space complexity *O(N)*
+
+#### Quicksort
+Quicksort is, just like the name implies, a fast sorting algorithm. In most cases it is 2-3 times faster than Mergesort. There are however certain conditions under which Quicksort runs in *N^2*. One example is if the data is already sorted.
+* Not stable
+* In place
+* Worst case time complexity *O(N^2)* (though very rare, *O(NlogN)* on avarage)
+* Worst case space complexity *O(1)*

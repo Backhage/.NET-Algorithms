@@ -6,7 +6,8 @@ namespace Sorting
     {
         /* Mergesort is a stable sorting algorithm that runs in NlogN time complexity and has N space complexity. 
            It conceptially works by dividing the array of N elements into N subarrays (each containing one element)
-           and then repeatedly merge subarrays together until only one array remains. */
+           and then repeatedly merge subarrays together until only one array remains. 
+        */
         public static void Sort<T>(T[] data) where T : IComparable
         {
             T[] workarray = new T[data.Length];

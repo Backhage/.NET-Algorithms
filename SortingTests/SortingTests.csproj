@@ -54,6 +54,7 @@
     <Compile Include="InsertionsortTests.cs" />
     <Compile Include="MergesortTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QuicksortTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
