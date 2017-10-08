@@ -52,6 +52,7 @@
     <Compile Include="GenericTests.cs" />
     <Compile Include="HeapsortTests.cs" />
     <Compile Include="InsertionsortTests.cs" />
+    <Compile Include="MergesortTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
