@@ -36,3 +36,18 @@ Quicksort is, just like the name implies, a fast sorting algorithm. In most case
 * In place
 * Worst case time complexity *O(N^2)* (though very rare, *O(NlogN)* on avarage)
 * Worst case space complexity *O(1)*
+
+## Graphs
+Contains data structures and algorithms to work with graphs.
+
+### Data Structures
+The most common data structure for Graphs are the Vertex. A number of vertices and edges is what makes a Graph.
+
+#### AbstractVertex
+This is a simple base class for vertices. It is abstract and cannot be instantiated on its own. Instead it is intended to be used as a base for more specific vertex classes.
+
+### Algorithms
+There are some well known and really useful algorithms that works on Graphs. Known graph problems are "Shortest path" and "The traveling salesman problem".
+
+#### Breadth First Search
+The Breadth first search algorithm (BFS) can be used for finding the shortest path between two vertices in an undirected and unweighted graph. One example of a relationship that can be represented with such a graph is a network of friends, for example on social media.

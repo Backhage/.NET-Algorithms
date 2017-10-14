@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26730.16
+VisualStudioVersion = 15.0.27004.2002
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sorting", "Sorting\Sorting.csproj", "{AD2EA20C-094E-43CB-83C1-D2767472DF37}"
 EndProject
@@ -13,6 +13,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 	ProjectSection(SolutionItems) = preProject
 		README.md = README.md
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GraphTests", "GraphTests\GraphTests.csproj", "{4C3C3CC1-B583-4FD7-8CB9-510C40F315E9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Graphs", "Graphs\Graphs.csproj", "{DB1477B3-D922-4A37-8A4E-5662AE89BB74}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -28,12 +32,21 @@ Global
 		{7E7A09B8-5CC6-46B8-94A4-E164EFF5CF99}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7E7A09B8-5CC6-46B8-94A4-E164EFF5CF99}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7E7A09B8-5CC6-46B8-94A4-E164EFF5CF99}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4C3C3CC1-B583-4FD7-8CB9-510C40F315E9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4C3C3CC1-B583-4FD7-8CB9-510C40F315E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4C3C3CC1-B583-4FD7-8CB9-510C40F315E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4C3C3CC1-B583-4FD7-8CB9-510C40F315E9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DB1477B3-D922-4A37-8A4E-5662AE89BB74}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DB1477B3-D922-4A37-8A4E-5662AE89BB74}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DB1477B3-D922-4A37-8A4E-5662AE89BB74}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DB1477B3-D922-4A37-8A4E-5662AE89BB74}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{7E7A09B8-5CC6-46B8-94A4-E164EFF5CF99} = {838AD8CD-D1D5-41FE-BC1A-9D7865E57A5C}
+		{4C3C3CC1-B583-4FD7-8CB9-510C40F315E9} = {838AD8CD-D1D5-41FE-BC1A-9D7865E57A5C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0792DCE3-C354-4678-904F-ABC6BB1EE77A}
