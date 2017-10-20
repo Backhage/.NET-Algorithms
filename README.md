@@ -46,6 +46,9 @@ The most common data structure for Graphs are the Vertex. A number of vertices a
 #### AbstractVertex
 This is a simple base class for vertices. It is abstract and cannot be instantiated on its own. Instead it is intended to be used as a base for more specific vertex classes.
 
+#### BFSVertex
+A vertex class that can be used when performing Breadth First Search.
+
 ### Algorithms
 There are some well known and really useful algorithms that works on Graphs. Known graph problems are "Shortest path" and "The traveling salesman problem".
 

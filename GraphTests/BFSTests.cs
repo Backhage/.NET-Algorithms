@@ -29,30 +29,36 @@ namespace GraphTests
         }
 
         [TestMethod]
-        public void BFS_SeparationCount_GivenTwoDirectlyConnectedVertices_ShouldReturnZero()
+        public void BFS_SeparationCount_GivenSameStartAndGoal_ShouldReturnZero()
+        {
+            BFSVertex firstAndLast = new BFSVertex();
+
+            Assert.AreEqual(0, BFS.SeparationCount(firstAndLast, firstAndLast));
+        }
+
+        [TestMethod]
+        public void BFS_SeparationCount_GivenTwoDirectlyConnectedVertices_ShouldReturnOne()
         {
             BFSVertex first = new BFSVertex();
             BFSVertex second = new BFSVertex();
-            first.AddAdjecentVertex(second);
-            second.AddAdjecentVertex(first);
 
-            Assert.AreEqual(0, BFS.SeparationCount(first, second));
-            Assert.AreEqual(0, BFS.SeparationCount(second, first));
+            BFS.Connect(first, second);
+
+            Assert.AreEqual(1, BFS.SeparationCount(first, second));
+            Assert.AreEqual(1, BFS.SeparationCount(second, first));
         }
         
         [TestMethod]
-        public void BFS_SeparationCount_GivenTwoConnectedVerticesSeparatedByOne_ShouldReturnOne()
+        public void BFS_SeparationCount_GivenTwoConnectedVerticesSeparatedByOne_ShouldReturnTwo()
         {
             BFSVertex start = new BFSVertex();
             BFSVertex middle = new BFSVertex();
             BFSVertex goal = new BFSVertex();
 
-            start.AddAdjecentVertex(middle);
-            middle.AddAdjecentVertex(start);
-            middle.AddAdjecentVertex(goal);
-            goal.AddAdjecentVertex(middle);
+            BFS.Connect(start, middle);
+            BFS.Connect(middle, goal);
 
-            Assert.AreEqual(1, BFS.SeparationCount(start, goal));
+            Assert.AreEqual(2, BFS.SeparationCount(start, goal));
         }
     }
 }

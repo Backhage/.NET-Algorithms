@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace Graphs
+﻿namespace Graphs
 {
     public class BFSVertex : AbstractVertex
     {
@@ -13,8 +11,12 @@ namespace Graphs
 
         public EvalStatus Status { get; set; }
 
+        public int SearchIndex { get; set; }
+        
         public BFSVertex()
         {
+            Status = EvalStatus.Undiscovered;
+            SearchIndex = 0;
         }
     }
 }
