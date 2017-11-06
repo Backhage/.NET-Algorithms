@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.27004.2002
+VisualStudioVersion = 15.0.27004.2005
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sorting", "Sorting\Sorting.csproj", "{AD2EA20C-094E-43CB-83C1-D2767472DF37}"
 EndProject
@@ -17,6 +17,10 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GraphTests", "GraphTests\GraphTests.csproj", "{4C3C3CC1-B583-4FD7-8CB9-510C40F315E9}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Graphs", "Graphs\Graphs.csproj", "{DB1477B3-D922-4A37-8A4E-5662AE89BB74}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DynamicProgrammingTests", "DynamicProgrammingTests\DynamicProgrammingTests.csproj", "{F98D8C75-2EC1-4AF1-AC8D-C401A9D2D062}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DynamicProgramming", "DynamicProgramming\DynamicProgramming.csproj", "{39DC2474-D42D-4681-90C2-15F216C5965D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -40,6 +44,14 @@ Global
 		{DB1477B3-D922-4A37-8A4E-5662AE89BB74}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DB1477B3-D922-4A37-8A4E-5662AE89BB74}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DB1477B3-D922-4A37-8A4E-5662AE89BB74}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F98D8C75-2EC1-4AF1-AC8D-C401A9D2D062}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F98D8C75-2EC1-4AF1-AC8D-C401A9D2D062}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F98D8C75-2EC1-4AF1-AC8D-C401A9D2D062}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F98D8C75-2EC1-4AF1-AC8D-C401A9D2D062}.Release|Any CPU.Build.0 = Release|Any CPU
+		{39DC2474-D42D-4681-90C2-15F216C5965D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{39DC2474-D42D-4681-90C2-15F216C5965D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{39DC2474-D42D-4681-90C2-15F216C5965D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{39DC2474-D42D-4681-90C2-15F216C5965D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -47,6 +59,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{7E7A09B8-5CC6-46B8-94A4-E164EFF5CF99} = {838AD8CD-D1D5-41FE-BC1A-9D7865E57A5C}
 		{4C3C3CC1-B583-4FD7-8CB9-510C40F315E9} = {838AD8CD-D1D5-41FE-BC1A-9D7865E57A5C}
+		{F98D8C75-2EC1-4AF1-AC8D-C401A9D2D062} = {838AD8CD-D1D5-41FE-BC1A-9D7865E57A5C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0792DCE3-C354-4678-904F-ABC6BB1EE77A}

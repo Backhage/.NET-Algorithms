@@ -37,20 +37,29 @@ Quicksort is, just like the name implies, a fast sorting algorithm. In most case
 * Worst case time complexity *O(N^2)* (though very rare, *O(NlogN)* on avarage)
 * Worst case space complexity *O(1)*
 
-## Graphs
+### Graphs
 Contains data structures and algorithms to work with graphs.
 
-### Data Structures
+#### Data Structures
 The most common data structure for Graphs are the Vertex. A number of vertices and edges is what makes a Graph.
 
-#### AbstractVertex
+##### AbstractVertex
 This is a simple base class for vertices. It is abstract and cannot be instantiated on its own. Instead it is intended to be used as a base for more specific vertex classes.
 
-#### BFSVertex
+##### BFSVertex
 A vertex class that can be used when performing Breadth First Search.
 
-### Algorithms
+#### Algorithms
 There are some well known and really useful algorithms that works on Graphs. Known graph problems are "Shortest path" and "The traveling salesman problem".
 
-#### Breadth First Search
+##### Breadth First Search
 The Breadth first search algorithm (BFS) can be used for finding the shortest path between two vertices in an undirected and unweighted graph. One example of a relationship that can be represented with such a graph is a network of friends, for example on social media.
+
+### Dynamic Programming
+Dynamic Programming (DP) is a method for solving complex problems by breaking them down into simpler subproblems, solving them, and storing (memoizing) the solution.
+The next time the same subproblem occurs the solution can be quickly looked up instead of re-computed.
+
+#### Large Fibonacci numbers
+Calculating a Fibonacci sequence is often used as an introduction to recursion since it is defined as *F(1) = F(2) = 1; F(n) = F(n-2) + F(n-1)*. However, implementing this algorithm recursively without much thought will lead to an exponential function where calulation of larger n will be painfully slow.
+
+Included in this library is a version of the Fibonacci algorithm that runs in *O(n)* and uses minimal extra space.
